@@ -1,4 +1,6 @@
-
+* {
+    border: 3px solid red;
+}
 body {
     font-family: 'Open Sans', 'Helvetica Neue';
     margin: 0;
@@ -7,7 +9,18 @@ body {
     flex-direction: column;
 }
 
-/* TOP SECTION*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+/* HEADER SECTION*/
 header {
     background-color: #1F2937;
     color: white;
@@ -21,17 +34,6 @@ header .container {
     justify-content: space-between;
     margin-bottom: 60px;
     gap: 16px;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
 }
 
 .links {
@@ -61,7 +63,9 @@ ul {
     color: #b3b4b6;
 }
 
-.title {
+h1 {
+    margin: 0;
+    padding: 0;
     font-size: 32px;
     font-weight: bold;
     color: #F9FAF8;
@@ -122,22 +126,28 @@ li .img {
     background-color: #E5E7EB;
     padding: 50px 360px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-#quote-text {
+.quote .container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote .container .text {
     font-size: 18px;
     font-style: italic;
     font-weight: 250;
-    align-self: flex-start;
+    align-self: center;
     margin: 0;
 }
 
-#quote-author {
+.quote .container .author {
     font-size: 14px;
     text-align: end;
     font-weight: bold;
+    align-self: flex-end;
     margin: 0;
 }
 
@@ -155,6 +165,7 @@ section.ad {
     border-radius: 6px;
     padding: 32px 90px;
     flex: 1;
+    max-width: 400px;
 
     display: flex;
     justify-content: space-between;
@@ -186,7 +197,7 @@ section.ad {
     font-size: 10px;
 }
 
-/* FOOTER */
+/* FOOTER SECTION*/
 footer {
     font-size: 12px;
     font-weight: 300;
