@@ -1,6 +1,8 @@
-/* * {
-    border: 3px solid red;
-} */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: 'Open Sans', 'Helvetica Neue';
     margin: 0;
@@ -26,9 +28,17 @@ header {
     color: white;
     
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 10px 10px;
     padding-bottom: 100px;
+}
+
+header .container,
+header .main {
+    width: 100%;
+    max-width: 1000px;
 }
 
 header .container {
@@ -104,13 +114,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 12px;
+    padding-top: 48px;
     padding-bottom: 64px;
     align-content: center;
 }
 
 h2 {
     white-space: nowrap;
+    margin-bottom: 10px;
 }
 
 .info ul {
